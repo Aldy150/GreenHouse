@@ -1,405 +1,202 @@
-# GreenHaven Properties
+# GreenHouse
 
-Crée un site web moderne, élégant et responsive pour une agence immobilière.
+> **Une expérience immobilière moderne, élégante et humaine.**
 
-L’objectif est de créer une template de base professionnelle, facilement personnalisable par la suite. Le design doit inspirer confiance, sérieux, modernité et haut de gamme, sans être trop chargé.
+GreenHouse est un site web vitrine pour une agence immobilière moderne, conçu pour présenter des biens immobiliers, faciliter la recherche de propriétés et offrir une expérience utilisateur claire, premium et responsive.
 
-Stack technique
+Le projet a été pensé comme une base facilement personnalisable et extensible, avec des données fictives pour la première version.
 
-Next.js avec App Router
+---
 
-TypeScript
+## Aperçu
 
-Tailwind CSS
+GreenHouse propose une expérience immobilière moderne avec une présentation des biens immobiliers, une recherche et un filtrage des propriétés, un système de favoris côté interface, des pages détaillées pour chaque propriété, une présentation des agents immobiliers, des témoignages clients, un formulaire de contact, un design entièrement responsive, une identité visuelle verte et blanche ainsi qu'une interface rapide et moderne.
 
-Composants réutilisables
+L'objectif est de proposer une expérience inspirée des plateformes immobilières modernes tout en conservant une identité visuelle propre à GreenHouse.
 
-Design responsive Mobile / Tablet / Desktop
+---
 
-Architecture propre et facilement extensible
+## Identité visuelle
 
-Utiliser des icônes modernes (Lucide React ou équivalent)
+GreenHouse utilise une palette principalement basée sur le vert et le blanc.
 
-Ne pas utiliser de backend complexe pour cette première version
+| Couleur         | Valeur    | Utilisation                    |
+| --------------- | --------- | ------------------------------ |
+| Vert principal  | `#166534` | Boutons et éléments principaux |
+| Vert secondaire | `#15803D` | Accents et interactions        |
+| Vert clair      | `#DCFCE7` | Badges et backgrounds          |
+| Blanc           | `#FFFFFF` | Background principal           |
+| Gris clair      | `#F8FAFC` | Sections secondaires           |
+| Gris foncé      | `#1E293B` | Texte principal                |
 
-Les données des biens peuvent être mockées dans des fichiers TypeScript/JSON
+### Direction artistique
 
-Identité visuelle
+Le design recherché est minimaliste, élégant, premium, moderne, accessible, aéré et professionnel.
 
-Utiliser principalement une palette verte et blanche.
+Les animations restent volontairement discrètes afin de conserver une expérience fluide et professionnelle.
 
-Couleurs souhaitées :
+---
 
-Vert principal : #166534
+## Technologies
 
-Vert secondaire : #15803D
+Le projet utilise actuellement React 19, TypeScript, Vite, TanStack Start, TanStack Router, TanStack Query, Tailwind CSS, Lucide React, React Hook Form et Zod.
 
-Vert clair : #DCFCE7
+### Pourquoi cette stack ?
 
-Blanc : #FFFFFF
+La stack actuelle permet de construire une application React moderne, rapide et facilement maintenable tout en conservant une architecture suffisamment flexible pour ajouter plus tard une API ou une base de données.
 
-Gris très clair pour les backgrounds : #F8FAFC
+---
 
-Gris foncé pour les textes : #1E293B
+## Structure du projet
 
-Le vert doit être utilisé avec modération pour conserver un aspect premium.
+L'organisation du projet est pensée autour de composants réutilisables et de routes indépendantes.
 
-Style général :
+```text
+GreenHouse/
+├── public/
+│   ├── images/
+│   └── ...
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   ├── PropertyCard.tsx
+│   │   ├── PropertyGrid.tsx
+│   │   ├── SearchBar.tsx
+│   │   ├── FilterPanel.tsx
+│   │   ├── AgentCard.tsx
+│   │   ├── TestimonialCard.tsx
+│   │   ├── ContactForm.tsx
+│   │   ├── PropertyGallery.tsx
+│   │   └── ...
+│   │
+│   ├── data/
+│   │   └── properties.ts
+│   │
+│   ├── routes/
+│   │   ├── __root.tsx
+│   │   ├── index.tsx
+│   │   ├── properties/
+│   │   ├── about.tsx
+│   │   ├── services.tsx
+│   │   └── contact.tsx
+│   │
+│   ├── lib/
+│   │   └── ...
+│   │
+│   ├── styles.css
+│   └── ...
+│
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
 
-Minimaliste
+La structure exacte peut évoluer au fur et à mesure du développement.
 
-Moderne
+---
 
-Premium mais accessible
+## Pages
 
-Beaucoup d'espace blanc
+### Accueil
 
-Coins légèrement arrondis
+La page d'accueil présente GreenHouse et son offre immobilière.
 
-Ombres très légères
+### Hero
 
-Typographie élégante et lisible
+> **Votre prochain chez-vous commence ici.**
 
-Animations discrètes au hover
+La section Hero présente une image immobilière forte, une présentation de GreenHouse, un bouton vers les propriétés, un bouton de contact et une recherche immobilière.
 
-Aucun effet visuel excessif
+### Recherche immobilière
 
-Structure du site
+La recherche permet de sélectionner le type de transaction, la localisation, le type de bien et le budget.
 
-Créer les pages suivantes :
+---
 
-1. Page d'accueil /
+## Statistiques
 
-Créer une landing page complète avec les sections suivantes.
+La page d'accueil présente quelques chiffres clés.
 
-Header
+**500+** biens disponibles
 
-Créer une navbar fixe ou sticky avec :
+**12+** années d'expérience
 
-Logo de l'agence à gauche
+**1 200+** clients satisfaits
 
-Liens :
+**25** experts immobiliers
 
-Accueil
+Ces chiffres sont actuellement fictifs et pourront être remplacés par des données réelles.
 
-Nos biens
+---
 
-À propos
+## Propriétés sélectionnées
 
-Services
+Une sélection de biens est présentée sous forme de cartes.
 
-Contact
+Chaque propriété contient une photo, le type de transaction, le prix, le nom du bien, la localisation, la surface, le nombre de chambres, le nombre de salles de bain, le système de favoris et un lien vers la fiche détaillée.
 
-Bouton principal "Voir nos biens"
+---
 
-Menu hamburger sur mobile
+## Page des propriétés
 
-Le logo peut être un logo temporaire composé d'une icône de maison + nom fictif de l'agence.
+Route :
 
-Nom temporaire :
-GreenHome 
+```text
+/properties
+```
 
-Hero section
+Cette page permet d'explorer l'ensemble des biens disponibles.
 
-Créer une grande section hero avec une belle image immobilière en arrière-plan ou une grande image sur le côté.
+### Filtres
 
-Texte :
+La page propose des filtres pour l'achat ou la location, la localisation, le type de propriété, le prix minimum, le prix maximum, le nombre de chambres et la surface minimum.
 
-"Votre prochain chez-vous commence ici."
+Les propriétés sont affichées dans une grille responsive.
 
-Sous-titre :
+```text
+Desktop : 3 colonnes
+Tablet  : 2 colonnes
+Mobile  : 1 colonne
+```
 
-"Découvrez des propriétés sélectionnées avec soin et trouvez le bien qui correspond réellement à votre projet."
+---
 
-Ajouter deux boutons :
+## Détail d'une propriété
 
-"Voir les propriétés"
+Route :
 
-"Nous contacter"
+```text
+/properties/:id
+```
 
-Ajouter également une barre de recherche immobilière moderne avec :
-
-Type de transaction : Acheter / Louer
-
-Localisation
-
-Type de bien
-
-Budget
-
-Bouton "Rechercher"
-
-La recherche doit avoir un design moderne ressemblant aux plateformes immobilières professionnelles.
-
-Section statistiques
-
-Afficher 4 statistiques :
-
-500+ Biens disponibles
-
-12+ Années d'expérience
-
-1 200+ Clients satisfaits
-
-25 Experts immobiliers
-
-Utiliser des chiffres bien visibles et un design sobre.
-
-Section "Nos biens sélectionnés"
-
-Créer une grille de cartes immobilières.
-
-Afficher 6 biens fictifs.
-
-Chaque carte doit contenir :
-
-Image du bien
-
-Badge "À vendre" ou "À louer"
-
-Prix
-
-Titre du bien
-
-Localisation
-
-Nombre de chambres
-
-Nombre de salles de bain
-
-Surface en m²
-
-Bouton ou lien "Voir le bien"
-
-Icône cœur pour ajouter aux favoris
-
-Exemples :
-
-Villa moderne avec piscine
-
-Appartement lumineux en centre-ville
-
-Maison familiale avec jardin
-
-Penthouse avec vue panoramique
-
-Appartement moderne 3 chambres
-
-Maison contemporaine
-
-Les images doivent être de belles photos immobilières libres d'utilisation ou utiliser des placeholders si nécessaire.
-
-Section "Pourquoi nous choisir ?"
-
-Créer 4 cartes :
-
-Expertise locale
-"Une connaissance approfondie du marché immobilier local."
-
-Biens sélectionnés
-"Des propriétés choisies selon des critères de qualité stricts."
-
-Accompagnement personnalisé
-"Un conseiller dédié pour vous accompagner à chaque étape."
-
-Transparence
-"Des informations claires et un processus immobilier sans mauvaises surprises."
-
-Utiliser des icônes Lucide.
-
-Section "Comment ça marche ?"
-
-Présenter un processus en 3 ou 4 étapes :
-
-Définissez votre projet
-
-Trouvez votre bien
-
-Visitez la propriété
-
-Finalisez votre projet
-
-Créer une présentation visuelle simple avec numéros et icônes.
-
-Section témoignages
-
-Créer 3 témoignages fictifs de clients.
-
-Chaque témoignage doit avoir :
-
-Avatar placeholder
-
-Nom
-
-Ville
-
-Note 5 étoiles
-
-Commentaire
+Chaque propriété possède une page détaillée comprenant une galerie photos, une image principale, des miniatures, le prix, la localisation, la surface, le nombre de chambres, le nombre de salles de bain, la description, les caractéristiques, les équipements, la localisation, l'agent immobilier et un formulaire de demande de visite.
 
 Exemple :
 
-"GreenHome nous a accompagnés du début à la fin. Nous avons trouvé notre maison en quelques semaines seulement."
+```text
+/properties/villa-moderne-piscine
+```
 
-Section CTA
+---
 
-Créer une grande section verte avec du texte blanc.
+## À propos
 
-Titre :
+Route :
 
-"Prêt à trouver votre prochain bien ?"
+```text
+/about
+```
 
-Sous-titre :
+Cette page présente l'histoire de GreenHouse, la mission de l'agence, ses valeurs et son équipe.
 
-"Parlons de votre projet immobilier et trouvons ensemble la propriété qui vous correspond."
+### Mission
 
-Boutons :
+> **Rendre l'immobilier plus simple, plus transparent et plus humain.**
 
-"Trouver un bien"
-
-"Prendre contact"
-
-Footer
-
-Créer un footer professionnel avec :
-
-Logo
-
-Description courte
-
-Navigation
-
-Services
-
-Contact
-
-Adresse
-
-Téléphone
-
-Email
-
-Réseaux sociaux
-
-Copyright
-
-2. Page /properties
-
-Créer une page dédiée à tous les biens immobiliers.
-
-Header avec :
-
-"Nos propriétés"
-
-Sous-titre :
-
-"Explorez notre sélection de biens disponibles à la vente et à la location."
-
-Créer une interface avec :
-
-Barre de filtres
-
-Filtres :
-
-Acheter / Louer
-
-Localisation
-
-Type de propriété
-
-Prix minimum
-
-Prix maximum
-
-Nombre de chambres
-
-Surface minimum
-
-Bouton "Appliquer les filtres"
-
-Bouton "Réinitialiser"
-
-Grille des propriétés
-
-Afficher les cartes immobilières dans une grille responsive :
-
-Desktop : 3 colonnes
-Tablet : 2 colonnes
-Mobile : 1 colonne
-
-Ajouter une pagination en bas.
-
-3. Page /properties/[id]
-
-Créer une page détail d'un bien.
-
-Afficher :
-
-Galerie photos
-
-Image principale
-
-Miniatures
-
-Badge "À vendre"
-
-Prix
-
-Nom du bien
-
-Localisation
-
-Surface
-
-Chambres
-
-Salles de bain
-
-Description détaillée
-
-Liste des caractéristiques
-
-Équipements
-
-Carte placeholder pour la localisation
-
-Informations sur l'agent immobilier
-
-Créer également un formulaire :
-
-"Intéressé par ce bien ?"
-
-Champs :
-
-Nom
-
-Email
-
-Téléphone
-
-Message
-
-Bouton :
-
-"Demander une visite"
-
-Ajouter un bouton "Ajouter aux favoris".
-
-4. Page /about
-
-Créer une page "À propos".
-
-Sections :
-
-Notre histoire
-
-Présenter GreenHome  comme une agence moderne spécialisée dans l'accompagnement des acheteurs, vendeurs, propriétaires et investisseurs.
-
-Notre mission
-
-"Rendre l'immobilier plus simple, plus transparent et plus humain."
-
-Nos valeurs
+### Valeurs
 
 Confiance
 
@@ -409,53 +206,31 @@ Excellence
 
 Proximité
 
-Notre équipe
+---
 
-Créer 4 cartes d'agents immobiliers avec :
+## Services
 
-Photo
+Route :
 
-Nom
+```text
+/services
+```
 
-Fonction
+Les services présentés comprennent l'achat immobilier, la vente immobilière, la location, la gestion locative, l'estimation immobilière et le conseil en investissement.
 
-Spécialité
+---
 
-Bouton/contact
+## Contact
 
-5. Page /services
+Route :
 
-Créer une page présentant les services :
+```text
+/contact
+```
 
-Achat immobilier
+La page de contact comprend les informations de l'agence ainsi qu'un formulaire.
 
-Vente immobilière
-
-Location
-
-Gestion locative
-
-Estimation immobilière
-
-Conseil en investissement
-
-Chaque service doit avoir :
-
-Une icône
-
-Un titre
-
-Une description
-
-Un bouton "En savoir plus"
-
-6. Page /contact
-
-Créer une page de contact professionnelle.
-
-Afficher deux colonnes sur desktop :
-
-Informations
+### Informations
 
 Adresse
 
@@ -465,9 +240,7 @@ Email
 
 Horaires d'ouverture
 
-Formulaire
-
-Champs :
+### Formulaire
 
 Nom complet
 
@@ -481,176 +254,315 @@ Type de projet
 
 Message
 
-Bouton :
+Les formulaires sont actuellement uniquement destinés à l'interface et ne sont pas connectés à un backend.
 
-"Envoyer ma demande"
+---
 
-Ajouter une carte placeholder sous les informations.
+## Composants
 
-Composants réutilisables
+Le projet privilégie les composants réutilisables.
 
-Créer des composants propres et réutilisables :
+Les principaux composants sont :
+
+```text
+Navbar
+Footer
+PropertyCard
+PropertyGrid
+SearchBar
+FilterPanel
+AgentCard
+TestimonialCard
+ContactForm
+PropertyGallery
+StatsSection
+SectionHeading
+CTASection
+```
+
+Cette approche permet de modifier facilement l'apparence ou le comportement d'un élément sans dupliquer le code.
+
+---
+
+## Données
+
+La première version utilise des données mockées.
+
+Une propriété suit une structure similaire à :
+
+```ts
+{
+  id: string;
+  title: string;
+  type: string;
+  transactionType: string;
+  price: number;
+  location: string;
+  bedrooms: number;
+  bathrooms: number;
+  area: number;
+  images: string[];
+  description: string;
+  features: string[];
+  agent: {
+    name: string;
+    role: string;
+    image: string;
+  };
+}
+```
+
+Au minimum, 12 propriétés fictives sont utilisées pour alimenter l'interface.
+
+À terme, ces données pourront être remplacées par une API ou une base de données.
+
+---
+
+## Responsive Design
+
+GreenHouse est conçu selon une approche Mobile First.
+
+### Mobile
+
+Le site utilise un menu hamburger, une colonne pour les propriétés, des formulaires empilés, un Hero adapté aux petits écrans et des boutons facilement accessibles.
+
+### Tablet
+
+Le site utilise deux colonnes pour les propriétés et une navigation adaptée.
+
+### Desktop
+
+Le site utilise une navigation complète, trois colonnes pour les propriétés, un Hero large, des sections aérées et des grilles plus riches.
+
+---
+
+## UX et interactions
+
+L'interface utilise des interactions légères avec des effets au survol des cartes, des transitions douces, des états actifs pour les boutons, un système de favoris, des retours visuels, des états de chargement et des états vides.
+
+Les animations sont volontairement limitées afin de préserver les performances et l'élégance du site.
+
+---
+
+## SEO
+
+Une attention particulière est portée à la structure SEO avec des metadata par page, des titres H1, H2 et H3 cohérents, des descriptions, des textes alternatifs pour les images, des URLs propres, Open Graph et une structure HTML sémantique.
+
+---
+
+## Installation
+
+### Prérequis
+
+Le projet nécessite Node.js et npm.
+
+Vérifier les versions installées :
+
+```bash
+node -v
+npm -v
+```
+
+### Installation du projet
+
+Cloner le projet :
+
+```bash
+git clone <repository-url>
+```
+
+Entrer dans le dossier :
+
+```bash
+cd GreenHouse
+```
+
+Installer les dépendances :
+
+```bash
+npm install
+```
+
+---
+
+## Développement
+
+Lancer le serveur de développement :
+
+```bash
+npm run dev
+```
+
+Vite affichera une adresse locale similaire à :
+
+```text
+http://localhost:5173/
+```
+
+Ouvrir cette adresse dans le navigateur.
+
+### Autres commandes
+
+Linter le projet :
+
+```bash
+npm run lint
+```
+
+Formater le code :
+
+```bash
+npm run format
+```
+
+Créer une version de production :
+
+```bash
+npm run build
+```
+
+Prévisualiser la version de production :
+
+```bash
+npm run preview
+```
+
+---
+
+## Architecture
+
+GreenHouse est actuellement une application React basée sur TanStack Start et Vite.
+
+L'architecture est volontairement simple afin de permettre une évolution progressive.
+
+### Version actuelle
+
+```text
+Frontend
+   |
+   ├── React
+   ├── TanStack Start
+   ├── TanStack Router
+   ├── Tailwind CSS
+   └── Mock Data
+```
+
+### Évolution possible
+
+À terme, l'architecture pourra évoluer vers :
+
+```text
+Frontend
+   |
+   ├── React / TanStack Start
+   |
+   ├── API
+   |
+   ├── Base de données
+   |
+   ├── Authentification
+   |
+   └── Administration
+```
+
+Ces fonctionnalités ne font volontairement pas partie de la première version.
+
+---
+
+## Hors périmètre actuel
+
+La version actuelle ne comprend pas de dashboard administrateur, d'authentification, de paiements, de base de données réelle, de backend immobilier, de réservation réelle de visites, de gestion réelle des utilisateurs, de CRM ou de système de messagerie.
+
+L'objectif actuel est de construire une base frontend solide, élégante et professionnelle.
+
+---
+
+## Roadmap
+
+### Phase 1 : Interface
+
+Configuration du projet
+
+Design system
 
 Navbar
 
-Footer
+Hero
 
-PropertyCard
+Recherche immobilière
 
-PropertyGrid
+Cartes de propriétés
 
-SearchBar
+Page propriétés
 
-FilterPanel
+Page détail
 
-AgentCard
+Page à propos
 
-TestimonialCard
+Page services
 
-Button
-
-Badge
-
-ContactForm
-
-PropertyGallery
-
-StatsSection
-
-SectionHeading
-
-CTASection
-
-Organiser correctement les composants afin que le projet soit facilement maintenable.
+Page contact
 
 Responsive design
 
-Le site doit être parfaitement responsive.
+### Phase 2 : Expérience utilisateur
 
-Mobile :
+Recherche fonctionnelle
 
-Navbar avec menu hamburger
+Filtres fonctionnels
 
-Cartes en une colonne
+Favoris
 
-Formulaires en une colonne
+Pagination
 
-Hero adapté aux petits écrans
+Animations
 
-Boutons facilement cliquables
+Optimisation des images
 
-Tablet :
+SEO avancé
 
-2 colonnes pour les propriétés
+### Phase 3 : Backend
 
-Desktop :
+API immobilière
 
-3 colonnes pour les propriétés
+Base de données
 
-Navigation horizontale
+Gestion des propriétés
 
-Hero large
+Gestion des agents
 
-Sections aérées
-
-UX/UI
-
-Ajouter de petites interactions :
-
-Hover sur les cartes
-
-Hover sur les boutons
-
-Transition douce
-
-Animation légère lors de l'apparition des sections
-
-Bouton favori avec état actif/inactif
-
-États loading/empty pour les propriétés
-
-Ne pas utiliser d'animations lourdes.
-
-SEO
-
-Ajouter une structure SEO de base :
-
-Metadata pour chaque page
-
-Titres H1/H2/H3 correctement structurés
-
-Alt text pour les images
-
-URLs propres
-
-Open Graph metadata de base
-
-Données
-
-Créer un jeu de données fictif avec au minimum 12 propriétés.
-
-Chaque propriété doit avoir :
-
-{
-  id,
-  title,
-  type,
-  transactionType,
-  price,
-  location,
-  bedrooms,
-  bathrooms,
-  area,
-  images,
-  description,
-  features,
-  agent
-}
-
-
-Utiliser ces données pour alimenter les différentes pages.
-
-Important
-
-Je veux avant tout une template élégante et professionnelle, pas une application immobilière complexe.
-
-Ne pas ajouter :
-
-Dashboard administrateur
+Formulaires connectés
 
 Authentification
 
-Paiement
+### Phase 4 : Administration
 
-Backend complexe
+Dashboard
 
-Système de réservation réel
+Création de propriétés
 
-Base de données réelle
+Modification des propriétés
 
-Tout doit fonctionner avec des données mockées pour cette première version.
+Suppression des propriétés
 
-Le résultat doit donner l'impression d'un vrai site d'agence immobilière premium, avec une identité visuelle verte et blanche, tout en gardant une architecture Next.js + Tailwind CSS propre et facilement extensible.
+Gestion des demandes clients
 
-This project was built with [Lovable](https://lovable.dev).
+Gestion des agents
 
-**Live app**: https://greenkey-properties.lovable.app
+---
 
-## Build with Lovable
+## Objectif du projet
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/73151932-b56e-4f3d-8149-15a669094416).
+GreenHouse a pour ambition de devenir une plateforme immobilière moderne permettant de trouver, découvrir, acheter ou louer un bien immobilier avec une expérience simple, transparente et élégante.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Le projet commence volontairement par une interface frontend de qualité afin de construire une base solide avant l'intégration de fonctionnalités backend.
 
-## Development
+---
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Licence
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+Projet privé : GreenHouse Immobilier.
+
+---
+
+**GreenHouse : Votre prochain chez-vous commence ici.**
