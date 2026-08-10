@@ -6,9 +6,9 @@ import { CTASection } from "@/components/CTASection";
 import { agents, agentSpecialities } from "@/data/properties";
 import houseImage from "@/assets/house.jpg";
 
-const title = "À propos — GreenHome Immobilier";
+const title = "À propos — GreenHouse";
 const description =
-  "GreenHome Immobilier accompagne acheteurs, vendeurs, propriétaires et investisseurs avec transparence, expertise et proximité.";
+  "GreenHouse accompagne acheteurs, vendeurs, propriétaires et investisseurs avec transparence, expertise et proximité.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -48,7 +48,7 @@ function AboutPage() {
       <section className="container-page grid items-center gap-12 py-20 lg:grid-cols-2">
         <img
           src={houseImage}
-          alt="Maison familiale accompagnée par GreenHome Immobilier"
+          alt="Maison familiale accompagnée par GreenHouse"
           loading="lazy"
           width={1024}
           height={768}
@@ -59,7 +59,7 @@ function AboutPage() {
             align="left"
             eyebrow="Notre histoire"
             title="Une agence née d'une conviction simple"
-            subtitle="Depuis 2013, GreenHome Immobilier accompagne les acheteurs, vendeurs, propriétaires et investisseurs sur l'ensemble de leur projet. Nous avons construit une agence moderne, indépendante, où chaque dossier est suivi par un conseiller dédié."
+            subtitle="Depuis 2013, GreenHouse accompagne les acheteurs, vendeurs, propriétaires et investisseurs sur l'ensemble de leur projet. Nous avons construit une agence moderne, indépendante, où chaque dossier est suivi par un conseiller dédié."
           />
           <div className="mt-8 rounded-2xl border border-border bg-accent p-6">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-accent-foreground">

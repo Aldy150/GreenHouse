@@ -12,7 +12,7 @@ interface PropertiesSearch {
   maxPrice?: number | undefined;
 }
 
-const title = "Nos propriétés — GreenHome Immobilier";
+const title = "Nos propriétés  GreenHouse";
 const description =
   "Explorez notre sélection de biens disponibles à la vente et à la location : villas, appartements, maisons et penthouses.";
 

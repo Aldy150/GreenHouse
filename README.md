@@ -97,7 +97,7 @@ Menu hamburger sur mobile
 Le logo peut être un logo temporaire composé d'une icône de maison + nom fictif de l'agence.
 
 Nom temporaire :
-GreenHome Immobilier
+GreenHome 
 
 Hero section
 
@@ -393,7 +393,7 @@ Sections :
 
 Notre histoire
 
-Présenter GreenHome Immobilier comme une agence moderne spécialisée dans l'accompagnement des acheteurs, vendeurs, propriétaires et investisseurs.
+Présenter GreenHome  comme une agence moderne spécialisée dans l'accompagnement des acheteurs, vendeurs, propriétaires et investisseurs.
 
 Notre mission
 

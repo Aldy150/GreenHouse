@@ -75,13 +75,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "GreenHouse Immobilier | Votre agence immobilière" },
+      { title: "GreenHouse" },
       { name: "description", content: "Achat, vente et location de biens immobiliers d'exception." },
-      { name: "author", content: "GreenHouse Immobilier" },
-      { property: "og:title", content: "GreenHouse Immobilier" },
+      { name: "author", content: "GreenHouse " },
+      { property: "og:title", content: "GreenHouse" },
       { property: "og:description", content: "Trouvez votre futur bien immobilier avec GreenHouse." },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "GreenHouse Immobilier" },
+      { property: "og:site_name", content: "GreenHouse" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

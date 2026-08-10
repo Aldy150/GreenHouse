@@ -11,7 +11,7 @@ import {
 import { SectionHeading } from "@/components/SectionHeading";
 import { CTASection } from "@/components/CTASection";
 
-const title = "Nos services immobiliers — GreenHome Immobilier";
+const title = "Nos services immobiliers  GreenHouse";
 const description =
   "Achat, vente, location, gestion locative, estimation et conseil en investissement : six services immobiliers pensés pour votre projet.";
 

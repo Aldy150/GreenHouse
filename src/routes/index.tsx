@@ -21,7 +21,7 @@ import { TestimonialCard, type Testimonial } from "@/components/TestimonialCard"
 import { CTASection } from "@/components/CTASection";
 import { properties } from "@/data/properties";
 
-const title = "GreenHome Immobilier — Votre prochain chez-vous commence ici";
+const title = "GreenHouse Votre prochain chez-vous commence ici";
 const description =
   "Agence immobilière premium : biens sélectionnés à la vente et à la location, accompagnement personnalisé et transparence à chaque étape.";
 
@@ -93,7 +93,7 @@ const testimonials: Testimonial[] = [
     city: "Nantes",
     initials: "CA",
     quote:
-      "GreenHome nous a accompagnés du début à la fin. Nous avons trouvé notre maison en quelques semaines seulement.",
+      "GreenHouse nous a accompagnés du début à la fin. Nous avons trouvé notre maison en quelques semaines seulement.",
   },
   {
     name: "Sophie Berger",
@@ -146,7 +146,7 @@ function Index() {
               alt="Belle maison contemporaine avec jardin au coucher du soleil"
               width={1400}
               height={1200}
-              className="aspect-[4/3] w-full rounded-3xl object-cover shadow-card"
+              className="aspect-4/3 w-full rounded-3xl object-cover shadow-card"
             />
           </div>
         </div>
@@ -226,7 +226,7 @@ function Index() {
           <SectionHeading
             eyebrow="Témoignages"
             title="Ils nous ont fait confiance"
-            subtitle="Ce que nos clients disent de leur expérience avec GreenHome."
+            subtitle="Ce que nos clients disent de leur expérience avec GreenHouse."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {testimonials.map((testimonial) => (

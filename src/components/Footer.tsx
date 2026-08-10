@@ -107,7 +107,7 @@ export function Footer() {
 
       <div className="border-t border-border">
         <div className="container-page flex flex-col gap-2 py-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} GreenHome Immobilier. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} GreenHouse Tous droits réservés.</p>
           <p>Mentions légales · Politique de confidentialité</p>
         </div>
       </div>

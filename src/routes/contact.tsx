@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 
-const title = "Contact — GreenHome Immobilier";
+const title = "Contact — GreenHouse";
 const description =
-  "Contactez GreenHome Immobilier : adresse, téléphone, email, horaires et formulaire pour parler de votre projet immobilier.";
+  "Contactez GreenHouse: adresse, téléphone, email, horaires et formulaire pour parler de votre projet immobilier.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/contact")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "RealEstateAgent",
-          name: "GreenHome Immobilier",
+          name: "GreenHouse",
           telephone: "+33 1 84 21 45 10",
           email: "contact@greenhome.fr",
           address: {
