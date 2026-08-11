@@ -60,12 +60,12 @@ function ContactPage() {
             <ul className="mt-5 space-y-4 text-sm">
               <li className="flex gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <span className="text-muted-foreground">18 rue des Tilleuls, 75009 Paris</span>
+                <span className="text-muted-foreground">72 avenue de la paix Moungali, Brazzaville</span>
               </li>
               <li className="flex gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <a href="tel:+33184214510" className="text-muted-foreground hover:text-primary">
-                  +33 1 84 21 45 10
+                <a href="tel: +242068901234" className="text-muted-foreground hover:text-primary">
+                   +242 06 890 12 34
                 </a>
               </li>
               <li className="flex gap-3">
@@ -74,7 +74,7 @@ function ContactPage() {
                   href="mailto:contact@greenhome.fr"
                   className="text-muted-foreground hover:text-primary"
                 >
-                  contact@greenhome.fr
+                  contact@greenhouse.cg
                 </a>
               </li>
               <li className="flex gap-3">
@@ -92,7 +92,7 @@ function ContactPage() {
 
           <div className="grid h-64 place-items-center rounded-2xl border border-dashed border-border bg-secondary text-sm text-muted-foreground">
             <span className="flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-primary" /> Carte — 18 rue des Tilleuls, Paris
+              <MapPin className="h-4 w-4 text-primary" /> 72 avenue de la paix Moungali, Brazzaville
             </span>
           </div>
         </div>
