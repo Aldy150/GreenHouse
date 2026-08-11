@@ -90,21 +90,21 @@ const steps = [
 const testimonials: Testimonial[] = [
   {
     name: "Claire & Antoine",
-    city: "Nantes",
+    city: "Brazzaville",
     initials: "CA",
     quote:
       "GreenHouse nous a accompagnés du début à la fin. Nous avons trouvé notre maison en quelques semaines seulement.",
   },
   {
     name: "Sophie Berger",
-    city: "Lyon",
+    city: "Pointe-Noire",
     initials: "SB",
     quote:
       "Une équipe disponible et honnête. Chaque étape a été expliquée clairement, sans jamais aucune pression.",
   },
   {
     name: "Marc Delaunay",
-    city: "Bordeaux",
+    city: "Dolisie",
     initials: "MD",
     quote:
       "J'ai vendu mon appartement au prix espéré en un mois. Les conseils d'estimation étaient parfaitement justes.",

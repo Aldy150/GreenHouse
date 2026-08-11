@@ -37,7 +37,7 @@ function AboutPage() {
     <>
       <section className="border-b border-border bg-secondary/60">
         <div className="container-page py-14 lg:py-20">
-          <h1 className="text-4xl text-foreground sm:text-5xl">À propos de GreenHome</h1>
+          <h1 className="text-4xl text-foreground sm:text-5xl">À propos de GreenHouse</h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
             Une agence moderne, à taille humaine, qui remet l'accompagnement au centre de
             l'immobilier.

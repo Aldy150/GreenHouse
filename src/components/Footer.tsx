@@ -27,7 +27,7 @@ export function Footer() {
             <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-primary-foreground">
               <Home className="h-4.5 w-4.5" />
             </span>
-            <span className="font-display text-lg font-semibold">GreenHome</span>
+            <span className="font-display text-lg font-semibold">GreenHouse</span>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
             Agence immobilière indépendante spécialisée dans l'accompagnement des acheteurs,
