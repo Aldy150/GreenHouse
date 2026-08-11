@@ -34,37 +34,37 @@ export interface Property {
 
 const agentList = [
   {
-    name: "Camille Laurent",
-    role: "Directrice d'agence",
-    phone: "+33 1 84 21 45 10",
-    email: "camille@greenhome.fr",
-    initials: "CL",
+    name: "Mr Jores Moukoko",
+    role: "Directeur d'agence",
+    phone: "+242 05 690 25 18",
+    email: "jores@greenhome.cg",
+    initials: "JM",
   },
   {
-    name: "Thomas Rivière",
+    name: "Thomas Odongo",
     role: "Conseiller vente",
-    phone: "+33 1 84 21 45 11",
-    email: "thomas@greenhome.fr",
+    phone: "+242 06 441 27 88",
+    email: "thomas@greenhome.cg",
     initials: "TR",
   },
   {
-    name: "Inès Moreau",
+    name: "Dina Mahoukou",
     role: "Spécialiste location",
-    phone: "+33 1 84 21 45 12",
-    email: "ines@greenhome.fr",
-    initials: "IM",
+    phone: "+242 04 321 45 67",
+    email: "dina@greenhome.cg",
+    initials: "DM",
   },
   {
-    name: "Julien Beaumont",
+    name: "Pascal Ossiete",
     role: "Conseil en investissement",
-    phone: "+33 1 84 21 45 13",
-    email: "julien@greenhome.fr",
-    initials: "JB",
+    phone: "+242 06 890 12 34",
+    email: "pascal@greenhome.cg",
+    initials: "PO",
   },
 ] as const satisfies readonly Agent[];
 
 export const agents: Agent[] = [...agentList];
-const [camille, thomas, ines, julien] = agentList;
+const [jores, thomas, dina, pascal] = agentList;
 
 export const agentSpecialities = [
   "Biens d'exception",
@@ -97,7 +97,7 @@ export const properties: Property[] = [
     description:
       "Une villa contemporaine baignée de lumière, pensée pour la vie de famille comme pour recevoir. Les pièces de vie s'ouvrent de plain-pied sur une terrasse et une piscine chauffée, dans un environnement calme et arboré.",
     features: ["Piscine chauffée", "Terrasse 60 m²", "Jardin paysager", ...baseFeatures],
-    agent: camille,
+    agent: jores,
   },
   {
     id: "appartement-centre-ville",
@@ -129,7 +129,7 @@ export const properties: Property[] = [
     description:
       "Une maison chaleureuse dans un quartier résidentiel recherché, avec un jardin clos exposé plein sud et un garage. Rénovée avec soin, elle ne demande aucun travaux.",
     features: ["Jardin clos 400 m²", "Garage", "Buanderie", ...baseFeatures],
-    agent: camille,
+    agent: jores,
   },
   {
     id: "penthouse-vue-panoramique",
@@ -145,7 +145,7 @@ export const properties: Property[] = [
     description:
       "Dernier étage d'une résidence contemporaine, ce penthouse profite d'une terrasse de 70 m² et d'une vue dégagée sur la ville. Prestations haut de gamme et domotique intégrée.",
     features: ["Terrasse 70 m²", "Domotique", "Climatisation", ...baseFeatures],
-    agent: julien,
+    agent: pascal,
   },
   {
     id: "appartement-moderne-3-chambres",
@@ -161,7 +161,7 @@ export const properties: Property[] = [
     description:
       "Appartement récent dans une résidence sécurisée, entièrement meublé et prêt à vivre. Parfait pour une famille ou une colocation professionnelle.",
     features: ["Meublé", "Résidence sécurisée", "Local vélo", ...baseFeatures],
-    agent: ines,
+    agent: dina,
   },
   {
     id: "maison-contemporaine",
@@ -193,7 +193,7 @@ export const properties: Property[] = [
     description:
       "Studio optimisé au calme sur cour, idéal étudiant ou jeune actif, à deux pas du tramway et des commerces.",
     features: ["Au calme", "Kitchenette équipée", ...baseFeatures],
-    agent: ines,
+    agent: dina,
   },
   {
     id: "villa-bord-de-mer",
@@ -209,7 +209,7 @@ export const properties: Property[] = [
     description:
       "À quelques minutes de la plage, une villa d'exception avec piscine à débordement et vue océan depuis les pièces principales.",
     features: ["Vue océan", "Piscine à débordement", "Pool house", ...baseFeatures],
-    agent: camille,
+    agent: jores,
   },
   {
     id: "appartement-haussmannien",
@@ -225,7 +225,7 @@ export const properties: Property[] = [
     description:
       "Moulures, cheminées et parquet point de Hongrie associés à une rénovation contemporaine soignée, au troisième étage avec ascenseur.",
     features: ["Moulures", "Cheminées", "Ascenseur", ...baseFeatures],
-    agent: julien,
+    agent: pascal,
   },
   {
     id: "maison-de-ville-jardin",
@@ -241,7 +241,7 @@ export const properties: Property[] = [
     description:
       "Maison de ville pleine de charme avec patio intérieur, à louer non meublée, dans l'un des quartiers les plus prisés de la ville.",
     features: ["Patio", "Combles aménagés", "Cheminée", ...baseFeatures],
-    agent: ines,
+    agent: dina,
   },
   {
     id: "penthouse-duplex-terrasse",
@@ -257,7 +257,7 @@ export const properties: Property[] = [
     description:
       "Duplex de standing avec double terrasse, prestations haut de gamme et place de parking en sous-sol.",
     features: ["Double terrasse", "Parking privatif", "Climatisation", ...baseFeatures],
-    agent: julien,
+    agent: pascal,
   },
   {
     id: "maison-campagne-renovee",

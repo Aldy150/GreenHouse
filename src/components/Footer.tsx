@@ -87,18 +87,18 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
             <li className="flex gap-2.5">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-              <span>18 rue des Tilleuls, 75009 Paris</span>
+              <span>72 avenue de la paix Moungali, Brazzaville</span>
             </li>
             <li className="flex gap-2.5">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
               <a href="tel:+33184214510" className="hover:text-primary">
-                +33 1 84 21 45 10
+                +242 06 890 12 34
               </a>
             </li>
             <li className="flex gap-2.5">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
               <a href="mailto:contact@greenhome.fr" className="hover:text-primary">
-                contact@greenhome.fr
+                contact@greenhouse.fr
               </a>
             </li>
           </ul>

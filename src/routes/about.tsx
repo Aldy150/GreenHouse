@@ -6,7 +6,7 @@ import { CTASection } from "@/components/CTASection";
 import { agents, agentSpecialities } from "@/data/properties";
 import houseImage from "@/assets/house.jpg";
 
-const title = "À propos — GreenHouse";
+const title = "À propos GreenHouse";
 const description =
   "GreenHouse accompagne acheteurs, vendeurs, propriétaires et investisseurs avec transparence, expertise et proximité.";
 
@@ -37,7 +37,7 @@ function AboutPage() {
     <>
       <section className="border-b border-border bg-secondary/60">
         <div className="container-page py-14 lg:py-20">
-          <h1 className="text-4xl text-foreground sm:text-5xl">À propos de GreenHouse</h1>
+          <h1 className="text-4xl text-foreground sm:text-5xl">À propos de Green<span className="text-green-900">House</span></h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
             Une agence moderne, à taille humaine, qui remet l'accompagnement au centre de
             l'immobilier.
@@ -52,7 +52,7 @@ function AboutPage() {
           loading="lazy"
           width={1024}
           height={768}
-          className="aspect-[4/3] w-full rounded-3xl object-cover shadow-card"
+          className="aspect-4/3 w-full rounded-3xl object-cover shadow-card"
         />
         <div>
           <SectionHeading
